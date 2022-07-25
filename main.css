@@ -1,0 +1,57 @@
+body {
+    background-color: #000000;
+    font-family: Tahoma;
+}
+
+#CalcFrame {
+    background-color: #FFFFFF;
+    width: 26em;
+    height: 32em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13em; /* Needs to be half of width */
+    margin-top: -16em; /* Needs to be half of height */
+}
+
+.calc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.9em;
+}
+
+.row {
+    display: flex;
+}
+
+.second, .third, .fourth, .fifth{
+    border-width: 0.1em 0 0 0;
+    border-color: #accfa0;
+    border-style: solid;
+}
+
+.dark {
+    background-color: #75bd5d;
+    border-width: 0 0.1em 0 0;
+    border-color: #accfa0;
+    border-style: solid;
+    color: #FFFFFF;
+
+}
+
+.light {
+    background-color: #99cf87;
+    color: rgb(10, 129, 10);
+}
+
+.button {
+    height: 6em;
+}
+
+.normal {
+    width: 6em;
+}
+
+.long {
+    width: 18.135em;
+}
