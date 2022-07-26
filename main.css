@@ -27,14 +27,14 @@ body {
 
 .second, .third, .fourth, .fifth{
     border-width: 0.1rem 0 0 0;
-    border-color: #accfa0;
+    border-color: #d8f1cf;
     border-style: solid;
 }
 
 .dark {
     background-color: #75bd5d;
     border-width: 0 0.1rem 0 0;
-    border-color: #accfa0;
+    border-color: #d8f1cf;
     border-style: solid;
     color: #FFFFFF;
 }
