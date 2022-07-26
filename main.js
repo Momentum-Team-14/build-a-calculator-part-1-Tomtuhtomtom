@@ -2,15 +2,43 @@
 const colorChange = document.querySelectorAll(".hover");
 const fontChange = document.querySelectorAll(".light");
 const calcButton = document.querySelectorAll(".button");
-let console = document.querySelector(".result");
+const clearButton = document.querySelector(".buttonc");
+const equalButton = document.querySelector(".buttone");
+let displayConsole = document.querySelector(".result");
 
 calcButton.forEach(button => {
     button.addEventListener("click", displayButton);
 })
 
 function displayButton(e) {
-    console.innerHTML += e.target.innerHTML;
-}
+    if (e.target.innerHTML === "X") {
+        displayConsole.innerHTML += "*";
+    } else {
+    displayConsole.innerHTML += e.target.innerHTML;
+}}
+
+clearButton.addEventListener("click", function(){
+    displayConsole.innerHTML = "";
+})
+
+equalButton.addEventListener("click", function(){
+    try {eval(displayConsole.innerHTML);
+    } catch (e) {
+        if (e instanceof SyntaxError) {
+            alert("SyntaxError");
+        }
+        else {
+            throw e;}
+    }
+    let answer = eval(displayConsole.innerHTML);
+    console.log(answer);
+    console.log(typeof answer);
+    if (typeof answer != "number") {
+        displayConsole.innerHTML = "ERROR"; //NOT WORKING
+    } else {
+    displayConsole.innerHTML = answer;
+    }
+})
 
 fontChange.forEach(button => {
     button.addEventListener("mouseover", fontColorSwitch)
