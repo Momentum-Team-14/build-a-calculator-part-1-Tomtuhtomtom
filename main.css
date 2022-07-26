@@ -44,7 +44,7 @@ body {
     color: #0A810A;
 }
 
-.button {
+.button, .buttonc, .buttone {
     height: 6rem;
     display: flex;
     align-items: center;
@@ -61,6 +61,5 @@ body {
 }
 
 .result {
-    justify-content: right;
     margin: 0 2rem 0 0;
 }
