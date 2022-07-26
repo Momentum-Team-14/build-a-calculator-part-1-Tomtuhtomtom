@@ -1,23 +1,16 @@
 
-const colorChange = document.getElementById("C-Button");
-const colorChange2 = document.getElementById("EqualButton");
-const fontColorChange = document.getElementById("DivideButton");
-const fontColorChange2 = document.getElementById("MultiplyButton");
-const fontColorChange3 = document.getElementById("MinusButton");
-const fontColorChange4 = document.getElementById("PlusButton");
+const colorChange = document.querySelectorAll(".hover");
+const fontChange = document.querySelectorAll(".light");
 
-colorChange.addEventListener("mouseover", colorSwitch);
-colorChange.addEventListener("mouseout", colorReset);
-colorChange2.addEventListener("mouseover", colorSwitch);
-colorChange2.addEventListener("mouseout", colorReset);
-fontColorChange.addEventListener("mouseover", fontColorSwitch);
-fontColorChange.addEventListener("mouseout", colorReset);
-fontColorChange2.addEventListener("mouseover", fontColorSwitch);
-fontColorChange2.addEventListener("mouseout", colorReset);
-fontColorChange3.addEventListener("mouseover", fontColorSwitch);
-fontColorChange3.addEventListener("mouseout", colorReset);
-fontColorChange4.addEventListener("mouseover", fontColorSwitch);
-fontColorChange4.addEventListener("mouseout", colorReset);
+fontChange.forEach(button => {
+    button.addEventListener("mouseover", fontColorSwitch)
+    button.addEventListener("mouseout", colorReset)
+})
+
+colorChange.forEach(hover => {
+    hover.addEventListener("mouseover", colorSwitch)
+    hover.addEventListener("mouseout", colorReset)
+})
 
 function colorSwitch(e) {
     e.target.style.backgroundColor = "#99cf87";
