@@ -26,6 +26,7 @@ equalButton.addEventListener("click", function(){
     } catch (e) {
         if (e instanceof SyntaxError) {
             alert("SyntaxError");
+            displayConsole.innerHTML = "";
         }
         else {
             throw e;}
@@ -34,7 +35,7 @@ equalButton.addEventListener("click", function(){
     console.log(answer);
     console.log(typeof answer);
     if (typeof answer != "number") {
-        displayConsole.innerHTML = "ERROR"; //NOT WORKING
+        displayConsole.innerHTML = "";
     } else {
     displayConsole.innerHTML = answer;
     }
