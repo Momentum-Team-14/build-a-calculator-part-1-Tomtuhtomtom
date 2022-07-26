@@ -1,6 +1,7 @@
 body {
     background-color: #000000;
     font-family: Tahoma;
+    /* font-size: 50px; */
 }
 
 #CalcFrame {
@@ -36,7 +37,6 @@ body {
     border-color: #accfa0;
     border-style: solid;
     color: #FFFFFF;
-
 }
 
 .light {
@@ -46,6 +46,10 @@ body {
 
 .button {
     height: 6em;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .normal {
@@ -54,4 +58,10 @@ body {
 
 .long {
     width: 18.135em;
+    justify-content: right;
+}
+
+.result {
+    justify-content: right;
+    margin: 2em;
 }
