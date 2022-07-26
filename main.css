@@ -1,24 +1,24 @@
 body {
     background-color: #000000;
     font-family: Tahoma;
-    /* font-size: 50px; */
+    font-size: 2rem;
 }
 
 #CalcFrame {
     background-color: #FFFFFF;
-    width: 26em;
-    height: 32em;
+    width: 26rem;
+    height: 32rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -13em; /* Needs to be half of width */
-    margin-top: -16em; /* Needs to be half of height */
+    margin-left: -13rem; /* Needs to be half of width */
+    margin-top: -16rem; /* Needs to be half of height */
 }
 
 .calc {
     display: flex;
     flex-wrap: wrap;
-    margin: 0.9em;
+    margin: 0.9rem;
 }
 
 .row {
@@ -26,14 +26,14 @@ body {
 }
 
 .second, .third, .fourth, .fifth{
-    border-width: 0.1em 0 0 0;
+    border-width: 0.1rem 0 0 0;
     border-color: #accfa0;
     border-style: solid;
 }
 
 .dark {
     background-color: #75bd5d;
-    border-width: 0 0.1em 0 0;
+    border-width: 0 0.1rem 0 0;
     border-color: #accfa0;
     border-style: solid;
     color: #FFFFFF;
@@ -45,23 +45,22 @@ body {
 }
 
 .button {
-    height: 6em;
-    /* text-align: center; */
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .normal {
-    width: 6em;
+    width: 6rem;
 }
 
 .long {
-    width: 18.135em;
+    width: 18.135rem;
     justify-content: right;
 }
 
 .result {
     justify-content: right;
-    margin: 2em;
+    margin: 0 2rem 0 0;
 }
