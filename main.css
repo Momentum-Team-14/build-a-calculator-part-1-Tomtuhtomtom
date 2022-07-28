@@ -56,8 +56,9 @@ body {
 }
 
 .long {
-    width: 18.135rem;
+    width: 18.2rem;
     justify-content: right;
+    border-width: 0;
 }
 
 .result {
@@ -66,4 +67,13 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 13ch;
+}
+
+/* Different Skins */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
 }
