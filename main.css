@@ -1,0 +1,79 @@
+body {
+    background-color: #000000;
+    font-family: Tahoma;
+    font-size: 2rem;
+}
+
+#CalcFrame {
+    background-color: #FFFFFF;
+    width: 26rem;
+    height: 32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13rem; /* Needs to be half of width */
+    margin-top: -16rem; /* Needs to be half of height */
+}
+
+.calc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.9rem;
+}
+
+.row {
+    display: flex;
+}
+
+.second, .third, .fourth, .fifth{
+    border-width: 0.1rem 0 0 0;
+    border-color: #d8f1cf;
+    border-style: solid;
+}
+
+.dark {
+    background-color: #75bd5d;
+    border-width: 0 0.1rem 0 0;
+    border-color: #d8f1cf;
+    border-style: solid;
+    color: #FFFFFF;
+}
+
+.light {
+    background-color: #99cf87;
+    color: #0A810A;
+}
+
+.button, .buttonc, .buttone, .buttond {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.normal {
+    width: 6rem;
+}
+
+.long {
+    width: 18.2rem;
+    justify-content: right;
+    border-width: 0;
+}
+
+.result {
+    margin: 0 2rem 0 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 13ch;
+}
+
+/* Different Skins */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
