@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css"> <!-- don't forget to link the css -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,13 @@
     </head>
         <body class="mainBody">
 
-            <div id="CalcFrame"> 
-                <div class="calc">
-                    <div class="row first">
+            <div id="CalcFrame">  <!-- white border around calculator -->
+                <div class="calc"> <!-- container that holds all the buttons -->
+                    <div class="row first"> <!-- each row has a container to hold the buttons in that row -->
+                        <!-- set multiple classes breaking down each characteristic of the buttons
+                                some classes can be reused for different buttons 
+                                the id's were made in case css or js needed them later
+                                but for the most part weren't used-->
                         <div class= "buttonc dark normal hover" id="C-Button">C</div>
                         <div class= "buttond dark long" id="Console">
                             <div class="result">0</div>
@@ -43,10 +47,10 @@
                     </div>
                 </div>
             </div>
-            <footer>
+            <footer> <!-- placed buttons for skins in footer so they'd stay at bottom -->
             <button class="original">Original Skin</button>
             <button class="skin">Skin 2</button>
             </footer>
-            <script src="main.js"></script>
+            <script src="main.js"></script> <!-- script can also be linked in head -->
         </body>
 </html>

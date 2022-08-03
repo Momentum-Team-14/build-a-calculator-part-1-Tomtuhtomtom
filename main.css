@@ -4,6 +4,7 @@ body {
     font-size: 2rem;
 }
 
+/* outer white frame centered inside webpage */
 #CalcFrame {
     background-color: #FFFFFF;
     width: 26rem;
@@ -15,22 +16,28 @@ body {
     margin-top: -16rem; /* Needs to be half of height */
 }
 
+/* big container that stores all the button to 
+sort them together to look like a calculator */
 .calc {
     display: flex;
     flex-wrap: wrap;
     margin: 0.9rem;
 }
 
+/* sorts each row of buttons */
 .row {
     display: flex;
 }
 
+/* sets the top border only to the rows except the 1st row*/
 .second, .third, .fourth, .fifth{
     border-width: 0.1rem 0 0 0;
     border-color: #d8f1cf;
     border-style: solid;
 }
 
+/* sets the style for just the darker buttons
+also the right border only*/
 .dark {
     background-color: #75bd5d;
     border-width: 0 0.1rem 0 0;
@@ -39,28 +46,34 @@ body {
     color: #FFFFFF;
 }
 
+/* sets the style for just the lighter buttons*/
 .light {
     background-color: #99cf87;
     color: #0A810A;
 }
 
+/* aligning the inside text of the buttons */
 .button, .buttonc, .buttone, .buttond {
     height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* allows me to reposition them */
+    align-items: center; /* moves them horizontally */
+    justify-content: center; /*moves them vertically */
 }
 
+/* sets the width to all the buttons to the same size */
 .normal {
     width: 6rem;
 }
 
+/* sets the style of the display console in the upper 
+right corner of the calculator*/
 .long {
     width: 18.2rem;
     justify-content: right;
     border-width: 0;
 }
 
+/* sets the style of the text displayed in the answer console*/
 .result {
     margin: 0 2rem 0 2rem;
     overflow: hidden;
@@ -69,8 +82,7 @@ body {
     max-width: 13ch;
 }
 
-/* Different Skins */
-
+/* style for different skin buttons at bottom of page */
 footer {
     position: absolute;
     bottom: 0;
